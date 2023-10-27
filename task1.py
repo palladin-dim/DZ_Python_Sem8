@@ -1,4 +1,4 @@
-def read_phonebook(filename = "phonebook.csv"):
+def read_phonebook(filename = "phonebook.txt"):
     """Читает телефонный справочник из файла."""
     with open(filename, "a+"):
         pass
@@ -13,7 +13,7 @@ def read_phonebook(filename = "phonebook.csv"):
     return phonebook
 
 
-def write_phonebook(phonebook, filename = "phonebook.csv"):
+def write_phonebook(phonebook, filename = "phonebook.txt"):
     """Записывает телефонный справочник в файл."""
     with open(filename, "w") as file:
         for surname, (name, phone) in phonebook.items():
